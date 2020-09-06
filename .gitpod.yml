@@ -1,5 +1,9 @@
 image: gitpod/workspace-full
 
 tasks:
-  - init: npm i ibm-watson@4.5.4
-    command: node
+  - init: npm install
+    command: npm run start
+
+vscode:
+  extensions:
+    - dracula-theme.theme-dracula@2.22.1:acEEGtphPo3sp9+wXQiSyw==
