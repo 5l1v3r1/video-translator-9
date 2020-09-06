@@ -1,0 +1,5 @@
+image: gitpod/workspace-full
+
+tasks:
+  - init: npm i ibm-watson@4.5.4
+    command: node
