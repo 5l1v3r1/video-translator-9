@@ -24,7 +24,7 @@ async function robot() {
         console.log('size: ' + info.size)
         })
         
-        video.pipe(await fs.createWriteStream('videos_baixados/myvideo.mp4'))
+        video.pipe(await fs.createWriteStream('./videos_baixados/myvideo.mp4'))
         
         let end = new Promise((res) => {
             video.on('end',function(){
