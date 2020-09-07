@@ -6,7 +6,10 @@ const robots = {
 }
 
 async function start() {
-    await robots.link
-    await robots.downloader
-    await robots.extrator
-}
+    await robots.link()
+    await robots.downloader()
+    await robots.extrator()
+    
+} 
+
+start()
