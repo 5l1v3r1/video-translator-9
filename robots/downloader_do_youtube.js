@@ -23,7 +23,7 @@ async function robot() {
         console.log('filename: ' + info._filename)
         console.log('size: ' + info.size)
         })
-        
+        fs.mkdirSync('./videos_baixados')
         video.pipe(await fs.createWriteStream('./videos_baixados/myvideo.mp4'))
         
         let end = new Promise((res) => {
