@@ -5,10 +5,12 @@ const fs = require('fs')
 
 async function robot() {
     ffmpeg.setFfmpegPath(ffmpegPath);
-    fs.mkdirSync('./audio')
+    if (!fs.existsSync('./audio/')) {
+        fs.mkdirSync('./audio')
+    }
     await extractAudio({
-    input: './videos_baixados/myvideo.mp4',
-    output: './audio/audio.mp4'
+        input: './videos_baixados/myvideo.mp4',
+        output: './audio/audio.mp3'
     }).then(console.log("Audio extraido")).catch()
 }
 
