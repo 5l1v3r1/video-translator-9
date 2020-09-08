@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "@ffmpeg-installer/ffmpeg": "^1.0.20",
+    "express": "^4.15.2",
     "ffmpeg-extract-audio": "^1.0.2",
     "fluent-ffmpeg": "^2.1.2",
     "ibm-watson": "^5.7.0",
