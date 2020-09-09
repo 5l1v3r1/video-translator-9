@@ -8,10 +8,13 @@ async function robot() {
     if (!fs.existsSync('./audio/')) {
         fs.mkdirSync('./audio')
     }
+    
     await extractAudio({
         input: './videos_baixados/myvideo.mp4',
         output: './audio/audio.mp3'
-    }).then(console.log("Audio extraido")).catch()
+    })
+    
+    console.log("Audio extraido")
 }
 
 module.exports = robot
